@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Country Information - World Regions Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="page">
+    <header>
+        <h1 class="page-title">Let's search some countries</h1>
+        <img src="assets/globe.gif" alt="Map of the world" class="globe">
+    </header>
+
+    <div class="content">
+        <form id="searchform">
+            <label for="search" class="screenreader">Searchbox</label>
+            <div class="input-group">
+                <input type="text" id="search" placeholder="Type a country name" class="field" name="s">
+                <div class="input-append">
+                    <button class="btn" type="submit">SEARCH</button>
+                </div>
+            </div>
+            <ul id="error-notification"></ul>
+        </form>
+        <div id="datafetch"></div>
+    </div>
+
+</div>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
